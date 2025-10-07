@@ -104,6 +104,7 @@ class control_panel:
     def get_devices(self,group_name):
         
         devices=self.groups[group_name]
+        print(f'list devices group {group_name}')
         return devices
         
         
@@ -116,9 +117,12 @@ class control_panel:
             
             for device in devices:
                 device.turn_on()
+            print(f'devices turn on')
             
         else:
-            print('....') 
+            print(f'{group_name} group mojod nist')
+
+    
             
             
             
