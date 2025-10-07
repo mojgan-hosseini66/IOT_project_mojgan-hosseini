@@ -97,7 +97,7 @@ class control_panel:
             
         else:
             
-            print('....')
+            print(f'{group_name}group mojod nist')
             
             
             
