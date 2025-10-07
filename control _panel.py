@@ -76,7 +76,7 @@ class control_panel:
         if group_name in self.groups:
             location='home'
             new_device=Device(location,group_name,device_type,device_name)
-            
+            print(f'device"{device_name}"sakhte shod')
             self.groups[group_name].append(new_device)
             print(f'device"{device_name}",ezafe shode dar goroh"{group_name}")
             
