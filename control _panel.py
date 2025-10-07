@@ -48,6 +48,7 @@ class control_panel:
     def __init__(self):
         self.groups={}
         
+        
     def create_group(self,group_name):
         if group_name not in self.groups:
             self.groups[group_name]=[]
@@ -77,7 +78,7 @@ class control_panel:
             new_device=Device(location,group_name,device_type,device_name)
             
             self.groups[group_name].append(new_device)
-            print('///////bamofghtia')
+            print(f'device"{device_name}",ezafe shode dar goroh"{group_name}")
             
         else:
             print('agha in esm vojod ndre') #...
