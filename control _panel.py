@@ -7,6 +7,7 @@
 
 
 
+
 class Device:
     
     def __init__(self,location,group,device_type,device_name):
