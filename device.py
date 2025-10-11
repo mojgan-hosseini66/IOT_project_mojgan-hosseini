@@ -3,8 +3,6 @@ APM:
 
 Ahsant , dorost hast
 
-
-
 '''
 
 
