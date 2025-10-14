@@ -3,6 +3,22 @@ mojgan:
 ostad line 180 rahnamayee konid lotfan
 
 
+
+APM:
+
+salam ,bebinid aval bayad tamame device haro az har goroh bekeshid biroon
+masalan
+
+all_devices=[]
+for devices in groups.values():
+    for device in devices:
+        all_devices.append(device)
+
+hamchin chizaee
+hala tooye all_devices for bezanid device haro bekeshid biron ye attribute daran b name device_type baayd ba 
+device_type i k function migire moghayese she ag barabar bood statuse oon device gerefte beshe
+yekam fkr konid roosh ag baz didid nmishe hamin paeen comment bzarid bishtr rahnamaee konm
+moafagh bashid
 '''
 
 
