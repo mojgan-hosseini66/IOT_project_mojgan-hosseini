@@ -1,5 +1,6 @@
 '''
-
+mojgan:
+ostad line 180 rahnamayee konid lotfan
 
 
 '''
@@ -136,52 +137,51 @@ class control_panel:
             
             
     def turn_off_in_group(self,group_name):
-        '''
-        biad dakhele oon group_name doone doone ro
-        khamoosh kone 
-        
-        
-        '''
-        pass
-    
+        if group_name in self.groups:
+
+            devices=self.get_devices(group_name)
+            for device in devices:
+                device.turn_on()
+            print(f'devices turn off')
+
+        else:
+            print(f'{group_name} group mojod nist')
+
     
     def turn_on_all(self):
-        '''
-        tamame device haro roshan kone
-        too livign toome parking hgarjaa
-        hamaroo roshan kone
-        '''
-        pass
+        
+        for devices in self.group.values():
+            device.turn_on()
+        print ('all device is turn on')
+          
     
     
     def turn_off_all(self):
-        '''
-        hamaro khamoosh kone
-        '''
+        for devices in self.group.values():
+            device.turn_off()
+        print ('all device is turn off')
         
         
-        pass
+        
     
     
     def get_status_in_group(self,group_name):
-        '''
-        be ezaye device haye tooye masalan felan group
-        living_room --> bebine roshanan ya khamoshan
-        porint kone
-        
-        a.get_status_in_group('living_room')
-        
-        device {name} is on
-        ... ..  .. ois off
-        .. .. .. is on
-        '''
-        
+       if  group_name in self.groups:
+            for device in self.groups[group_name]:
+               status='on' 
+            if device.get_status==status:
+                print(f'dastgah:{status}')
+            else:
+                print(f'dastgah is off')
+      else:
+          print("group is not")
+
+
     def get_status_in_device_type(self,dvice_type):
         
         '''
         varaye kole devicd haee k hasan
-        bere device_typeshono check kone
-        
+        bere device_typeshono      
         fght lamparo bere check kone
         
         lamps -->lampa
@@ -195,10 +195,9 @@ class control_panel:
         pass
     
     
-    #tabe ee bename create_device???
     
     def create_sensor(self):
-        pass
+        0
     
     def create_multiple_sensor(self):
         pass
