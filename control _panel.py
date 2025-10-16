@@ -194,29 +194,38 @@ class control_panel:
 
 
     def get_status_in_device_type(self,dvice_type):
-        
-        '''
-        varaye kole devicd haee k hasan
-        bere device_typeshono      
-        fght lamparo bere check kone
-        
-        lamps -->lampa
-        doors --L> fght doora
-        (too ch groupi , device_type)
-        
-        statuseshono bede
+        all_devices = []
+    for devices in self.groups.values():
+        for device in devices:
+            all_devices.append(device)
 
+    found=False
+    for device in all_devices:
+      if device.device_type == device_type:
+            found=True
         
-        '''
-        pass
+            if device.status == 'on' :
+                print(f'"{device.status}" is on')
+            else :
+            
+                print(f'"{device.status}" is off') 
+   
+      else:
+            print(f' dastghi "{device_type}" yaft nashod.')
+
+   
+
+    
+
     
     
+
     
     def create_sensor(self):
-        0
+        print('sensor jadid misazad')
     
     def create_multiple_sensor(self):
-        pass
+        print ('sakht chnad sensor ba ham')
     
     
     
